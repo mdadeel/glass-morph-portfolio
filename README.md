@@ -21,7 +21,7 @@
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd your-repo
+    cd glass-morph-portfolio
     ```
 3.  **Open `index.html` in your browser.**
 
