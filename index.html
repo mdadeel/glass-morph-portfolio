@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -15,24 +15,22 @@
   <meta name="color-scheme" content="light dark">
 </head>
 <body>
-  <div class="newspaper-container " id="page">
-    <header class="masthead-section card card fade-up" role="banner" aria-label="Site header">
-      <div class="masthead-inner">
-          <svg class="masthead-ornament" width="120" height="20" viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 20C40 20 40 0 20 0S0 20 0 20h120C120 20 100 0 80 0S60 20 60 20z" fill="var(--rule)"/></svg>
-          <h1 class="masthead">The Adeel Times</h1>
+  <div class="background-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
 
-        <div class="masthead-meta">
-          <div class="meta-left">
-            <p class="published">Published on <time id="today-date"></time></p>
-          </div>
-          <div class="meta-sep"></div>
-          <div class="meta-right">
-            <p class="tagline">Minimal editorial portfolio for creative web and interactive work</p>
-          </div>
-        </div>
+  <div class="newspaper-container" id="page">
+    <header class="masthead-section card fade-up" role="banner" aria-label="Site header">
+      <div id="particles-js"></div>
+      <div class="masthead-inner">
+        <svg class="masthead-ornament" width="120" height="20" viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 20C40 20 40 0 20 0S0 20 0 20h120C120 20 100 0 80 0S60 20 60 20z" fill="var(--rule)"/></svg>
+        <h1 class="masthead">The Adeel Times</h1>
+        <p class="tagline">Crafting digital experiences with code and creativity.</p>
 
         <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
-          <i class="fas fa-moon"></i>
+          <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
       </div>
     </header>
@@ -43,8 +41,6 @@
           <div class="lead-text">
             <h2 class="lead-title">Hi, I am Adeel</h2>
             <p class="lead-lead">I am a creative developer and storyteller from Bangladesh. I blend code and design to craft experiences that feel deliberate and calm. I work across minimal interfaces, interactive 3D experiments, and expressive micro animations. I am exploring Python, AI, Linux, and Web3 while sharpening front end craft.</p>
-
-            <!-- <p class="lead-body">On this page you will find a curated selection of recent projects that showcase interaction, composition, and careful details. If you like what you see, reach out and let us build something thoughtful together.</p> -->
 
             <div class="social-row">
               <a href="https://github.com/mdadeel" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -64,42 +60,122 @@
 
       <section class="projects-section card fade-up" id="projects" aria-labelledby="projects-title">
         <h3 id="projects-title" class="section-title">Recent projects</h3>
-        <div id="project-filters" class="project-filters">
-          <button class="filter-btn active" data-lang="all">All</button>
-        </div>
         <div id="project-grid" class="project-grid" aria-live="polite">
-          <p class="muted">Loading projects from GitHub</p>
+          <a href="#" class="project-card fade-up">
+            <div class="project-media">
+              <img loading="lazy" src="img/1322270.png" alt="minimal-portfolio screenshot">
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">minimal-portfolio</h4>
+              <p class="project-desc">A minimal portfolio website.</p>
+              <div class="project-meta">
+                <span class="badge">JavaScript</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="project-card fade-up">
+            <div class="project-media">
+              <img loading="lazy" src="img/1337527.png" alt="newspapar-portfolio screenshot">
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">newspapar-portfolio</h4>
+              <p class="project-desc">A newspaper-style portfolio.</p>
+              <div class="project-meta">
+                <span class="badge">HTML</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="project-card fade-up">
+            <div class="project-media">
+              <img loading="lazy" src="img/1338166.png" alt="old-school-portfolio screenshot">
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">old-school-portfolio</h4>
+              <p class="project-desc">An old-school style portfolio.</p>
+              <div class="project-meta">
+                <span class="badge">CSS</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="project-card fade-up">
+            <div class="project-media">
+              <img loading="lazy" src="img/1342533.jpeg" alt="web-dev-portfolio- screenshot">
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">web-dev-portfolio-</h4>
+              <p class="project-desc">A web developer portfolio.</p>
+              <div class="project-meta">
+                <span class="badge">JavaScript</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="project-card fade-up">
+            <div class="project-media">
+              <img loading="lazy" src="img/1353386.png" alt="webflow-agency screenshot">
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">webflow-agency</h4>
+              <p class="project-desc">A webflow agency website.</p>
+              <div class="project-meta">
+                <span class="badge">HTML</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="project-card fade-up">
+            <div class="project-media">
+              <img loading="lazy" src="img/905.jpg" alt="flower-shop screenshot">
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">flower-shop</h4>
+              <p class="project-desc">A flower shop website.</p>
+              <div class="project-meta">
+                <span class="badge">CSS</span>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
 
       <section class="info-section card fade-up" id="info" aria-labelledby="info-title">
         <h3 id="info-title" class="section-title-new">About & Credentials</h3>
-        <div class="info-grid-new">
-          <div class="info-item-new">
-            <h4 class="info-title-new"><i class="fa-solid fa-briefcase"></i> Professional Experience</h4>
-            <p><strong>Creative Developer</strong>, Freelance (2023-Present)</p>
-            <p class="muted">Designing and building portfolio experiences, focusing on clarity, performance, and small moments of delight.</p>
+        <div class="info-content-wrapper">
+          <div class="info-column">
+            <div class="info-item-new">
+              <h4 class="info-title-new"><i class="fa-solid fa-briefcase"></i> Professional Experience</h4>
+              <div class="experience-entry">
+                <p><strong>Creative Developer</strong>, Freelance (2023-Present)</p>
+                <p class="muted">Designing and building portfolio experiences, focusing on clarity, performance, and small moments of delight.</p>
+              </div>
+            </div>
+            <div class="info-item-new">
+              <h4 class="info-title-new"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+              <div class="education-entry">
+                <p><strong>HSC, Science</strong>, Dewanhat City Corporation College (2022-2023)</p>
+                <p><strong>SSC, Science</strong>, Hazi Mohammad Mohsin High School (2018-2021)</p>
+              </div>
+            </div>
           </div>
-          <div class="info-item-new">
-            <h4 class="info-title-new"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
-            <p><strong>HSC, Science</strong>, Dewanhat City Corporation College (2022-2023)</p>
-            <p><strong>SSC, Science</strong>, Hazi Mohammad Mohsin High School (2018-2021)</p>
+          <div class="info-column">
+            <div class="info-item-new top-skills">
+              <h4 class="info-title-new"><i class="fa-solid fa-star"></i> Top Skills</h4>
+              <div class="skills-container">
+                <span class="skill-badge">Creative Development</span>
+                <span class="skill-badge">Minimal Web Design</span>
+                <span class="skill-badge">Three.js & GSAP</span>
+                <span class="skill-badge">HTML, CSS, JS</span>
+                <span class="skill-badge">Python & AI</span>
+                <span class="skill-badge">Linux</span>
+                <span class="skill-badge">Web3</span>
+                <span class="skill-badge">AI/ML Basics</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="info-item-new top-skills">
-            <h4 class="info-title-new"><i class="fa-solid fa-star"></i> Top Skills</h4>
-            <ul class="skills-list-new">
-              <li>Creative Development</li>
-              <li>Minimal Web Design</li>
-              <li>Three.js & GSAP</li>
-              <li>HTML, CSS, JS</li>
-              <li>Python & AI</li>
-            </ul>
-          </div>
       </section>
+    
     </main>
 
-    <footer class="main-footer card" role="contentinfo">
+    <footer class="main-footer card fade-up" role="contentinfo">
       <div class="footer-inner">
         <p>&copy; <span id="year"></span> Shahnawas Adeel</p>
       </div>
@@ -108,6 +184,41 @@
     <button id="top-btn" class="top-btn" title="Scroll to top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
   </div>
 
+  <div class="cursor"></div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+  <!-- Lenis (smooth scroll) – this was missing -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.38/bundled/lenis.min.js"></script>
+
+  <!-- Particles -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Your JS -->
   <script src="script.js"></script>
+
+  <!-- Particles init -->
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {"value": 80, "density": {"enable": true, "value_area": 800}},
+        "color": {"value": "#ffffff"},
+        "shape": {"type": "circle"},
+        "opacity": {"value": 0.5, "random": true},
+        "size": {"value": 3, "random": true},
+        "line_linked": {"enable": false},
+        "move": {"enable": true, "speed": 1, "random": true, "out_mode": "out"}
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {"onhover": {"enable": true, "mode": "bubble"}, "onclick": {"enable": true, "mode": "repulse"}, "resize": true},
+        "modes": {"bubble": {"distance": 100, "size": 5, "duration": 2, "opacity": 8}, "repulse": {"distance": 200}}
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 </html>
