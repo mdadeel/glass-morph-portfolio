@@ -295,3 +295,52 @@ a:focus-visible, button:focus-visible{outline:3px solid var(--accent-weak)}
   opacity: 1 !important;
   transform: none !important;
 }
+
+/* Mobile alternate layout (activated by JS: body.mobile-dense) */
+body.mobile-dense .newspaper-container {
+  padding: 16px;
+  border-radius: 14px;
+}
+
+body.mobile-dense .masthead {
+  font-size: clamp(28px, 9vw, 36px);
+  text-align: left;
+}
+
+body.mobile-dense .tagline {
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+body.mobile-dense .lead-inner {
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+body.mobile-dense .lead-photo img {
+  max-width: 140px;
+  border-radius: 14px;
+}
+
+body.mobile-dense .project-grid {
+  grid-template-columns: 1fr;        /* single column */
+  gap: 14px;
+}
+
+body.mobile-dense .project-card {
+  border-radius: 14px;
+}
+
+body.mobile-dense .project-media {
+  aspect-ratio: 16/9;
+}
+
+body.mobile-dense .section-title,
+body.mobile-dense .section-title-new {
+  text-align: left;
+}
+
+body.mobile-dense .top-btn {
+  right: 14px;
+  bottom: 18px;
+}
